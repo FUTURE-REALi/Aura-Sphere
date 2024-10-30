@@ -2,7 +2,8 @@ import express from 'express'
 import dotenv from 'dotenv';
 import connectDB from './connect.js';
 import auth from './routes/auth.js';
-import { mongo } from 'mongoose';
+import mongoose from 'mongoose';
+const { mongo } = mongoose;
 import session from 'express-session';
 import passport from 'passport';
 import './passport.js';
